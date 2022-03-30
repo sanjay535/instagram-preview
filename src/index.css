@@ -40,9 +40,9 @@ body {
   position: relative;
 }
 .btn{
-  background: green;
+  background: #7171e6;
   color: #fff;
-  padding: 5px 10px;
+  padding: 5px 20px;
   font-size: large;
   cursor: pointer;
 }
@@ -75,5 +75,16 @@ body {
 }
 .value-likes{
   display: inline-block;
+}
+.sort-btn{
+  padding: 5px 10px;
+  background: #7171e6;
+  color: #fff;
+  outline: none;
+  font-size: 24px;
+  margin: 5px auto;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
 }
 

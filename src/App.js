@@ -45,16 +45,27 @@ class App extends React.Component {
 
   }
 
+  sortByLikes(){
+    const {listImages}=this.state;
+    listImages.sort((a, b)=>a.likes-b.likes);
+    this.setState({
+      listImages
+    });
+  }
+
   render(){
     const {listImages, preview}=this.state;
     return (
-      <div className="container">
+      <div>
+         <button className="sort-btn" onClick={()=>this.sortByLikes()}>Sort on basis of likes</button>
+         <div className="container">
           <List images={listImages}
             onImageCardClick={this.onImageCardClick}
           />
           <Preview preview={preview}
            onClickLikes={this.onClickLikes}
           />
+          </div>
       </div>
     );
   }
