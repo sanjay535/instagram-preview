@@ -12,8 +12,8 @@ class ImageCard extends React.Component {
           <div>
               <img className="image" src={url} alt="insta"/>
               <div className="ld">
-                <p><span>Likes:</span>{likes}</p>
-                <p><span>Date:</span>{timestamp}</p>
+                <p className="likes-para"><img className="like-icon" src="https://cdn-icons-png.flaticon.com/512/833/833472.png" alt="likes"/><span className="value-likes">{likes}</span></p>
+                <p className="time-para">{timestamp}</p>
               </div>
           </div>
       </div>
